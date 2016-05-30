@@ -1,0 +1,2 @@
+Ghi chú lỗi:
+- Tuy dùng maven nhưng thư viện httpclient phải download thủ công các file jar rồi setting buildpath. Nếu không bị lỗi không tìm thấy class (mặc dùng eclipse) ko báo lúc compile
