@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
+  <script src="jquery-1.12.3.min.js"></script>
+  <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+  <title>Câu lạc bộ Gia sư ĐH Bách Khoa</title>
+</head>
+ 
+<body>
+<div class="container">
+  <div class="row">
+    <div class="jumbotron">
+        <h1>Đăng ký thông tin gia sư</h1>
+        <p>Tạo thông tin gia sư trên trang web <a href="bachkhoagiasu.com">bachkhoagiasu.com</a>. Chỉ áp dụng với các bạn đã là thành viên CLB.</p>
+    </div>
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <form role="form" method="post" action="Add" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Personal Particular</legend>
+          <div class="form-group">
+            <label for="name">Họ và tên:</label>
+            <input type="text" name="name" id="name" class="form-control"/>
+          </div>
+          <div class="form-group">
+          	<label for="file">Avatar:</label>
+          	<input type="file" name="file" id="file"/>
+          </div>
+          <label>Giới tính:</label>
+          <div class="radio">
+            <label><input type="radio" name="gioitinh" value="Nam">Nam</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="gioitinh" value="Nữ">Nữ</label>
+          </div>
+
+          <div class="form-group">
+            <label for="nam">Sinh viên năm: </label>
+            <select name="nam" id="nam" class="form-control">
+              <option value="Năm 1">Năm 1</option>
+              <option value="Năm 2">Năm 2</option>
+              <option value="Năm 3">Năm 3</option>
+              <option value="Năm 4">Năm 4</option>
+              <option value="Năm 5">Năm 5</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="khoa">Sinh viên khoa: </label>
+            <select name="khoa" id="khoa" class="form-control">
+
+              <option value="Khoa Cơ khí">Khoa Cơ khí</option>
+              <option value="Khoa Công nghệ Vật liệu">Khoa Công nghệ Vật liệu</option>
+              <option value="Khoa Điện - Điện tử">Khoa Điện - Điện tử</option>
+              <option value="Khoa Khoa học Ứng dụng">Khoa Khoa học Ứng dụng</option>
+              <option value="Khoa Khoa học và Kỹ thuật Máy tính">Khoa Khoa học và Kỹ thuật Máy tính</option>
+              <option value="Khoa Kỹ thuật Địa chất và Dầu khí">Khoa Kỹ thuật Địa chất và Dầu khí</option>
+              <option value="Khoa Kỹ thuật Giao thông">Khoa Kỹ thuật Giao thông</option>
+              <option value="Khoa Kỹ thuật Hóa học">Khoa Kỹ thuật Hóa học</option>
+              <option value="Khoa Kỹ thuật Xây dựng">Khoa Kỹ thuật Xây dựng</option>
+              <option value="Khoa Môi trường và Tài nguyên">Khoa Môi trường và Tài nguyên</option>
+              <option value="Khoa Quản lý Công nghiệp">Khoa Quản lý Công nghiệp</option>
+              <option value="Trung tâm Bồi dưỡng Kỹ thuật & Văn hoá Bách khoa">Trung tâm Bồi dưỡng Kỹ thuật & Văn hoá Bách khoa</option>
+              <option value="Trung tâm Đào tạo Bảo dưỡng Công nghiệp">Trung tâm Đào tạo Bảo dưỡng Công nghiệp</option>
+              <option value="Trung tâm Ngoại ngữ">Trung tâm Ngoại ngữ</option>
+              <option value="Chương trình ĐT KS CLC ( PFEIV )">Chương trình ĐT KS CLC ( PFEIV )</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="ngaysinh">Ngày sinh: </label>
+            <input type="date" id="ngaysinh" name="ngaysinh" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="sdt">Số điện thoại: </label>
+            <input type="text" id="sdt" name="sdt" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="mssv">MSSV: </label>
+            <input type="text" id="mssv" name="mssv" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="youtube">Một đoạn video dưới 1' giới thiệu bản thân: (link youtube) </label>
+            <input type="url" id="youtube" name="youtube" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="diachi">Địa chỉ hiện tại: (chi tiết)</label>
+            <input type="text" id="diachi" name="diachi" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="fb">Link facebook: </label>
+            <input type="url" id="fb" name="fb" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="thanhtich">Thành tích nổi bật (trung học phổ thông và đại học): </label>
+            <input type="text" id="thanhtich" name="thanhtich" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="quequan">Quê quán: (tên tỉnh)</label>
+            <input type="text" id="quequan" name="quequan" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="daymon">Mong muốn dạy môn: </label>
+            <input type="text" id="daymon" name="daymon" class="form-control" />
+          </div>
+          <label>Giọng nói:</label>
+          <div class="radio">
+            <label><input type="radio" name="giongnoi" value="Bắc">Bắc</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="giongnoi" value="Trung">Trung</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="giongnoi" value="Nam">Nam</label>
+          </div>
+          <div class="form-group">
+            <label for="thongtinkhac">Thông tin khác: </label>
+            <input type="text" id="thongtinkhac" name="thongtinkhac" class="form-control" />
+          </div>
+        </fieldset>
+
+        <input type="submit" class="btn btn-default" value="SEND" />
+        <input type="reset" class="btn btn-default" value="CLEAR" />
+      </form>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
+
+</body>
+</html>
